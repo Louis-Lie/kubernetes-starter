@@ -38,7 +38,7 @@ $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
 
 - 安装最新的稳定版
 ```bash
-$ apt-get install -y docker-ce
+$ apt-get install -y --allow-unauthenticated docker-ce
 ```
 - 安装指定版本
 ```bash
@@ -46,7 +46,7 @@ $ apt-get install -y docker-ce
 $ apt-cache madison docker-ce
  
 #指定版本安装(比如版本是17.09.1~ce-0~ubuntu)
-$ apt-get install -y docker-ce=17.09.1~ce-0~ubuntu
+$ apt-get install -y --allow-unauthenticated --allow-downgrades docker-ce=17.09.1~ce-0~ubuntu
 
 ```
 - 接受所有ip的数据包转发
